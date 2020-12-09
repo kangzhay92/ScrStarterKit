@@ -1,0 +1,34 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Screen Saver</Name>
+    <Description>Basic Screen Saver application with a Configuration dialog</Description>
+    <ProjectType>VC</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Screen Saver</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+    <PreviewImage>__PreviewImage.png</PreviewImage>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="$projectname$.vcxproj" File="ScreenSaverApp.vcxproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="$projectname$.vcxproj.filters">ScreenSaverApp.vcxproj.filters</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="application.cpp">application.cpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="configuration.cpp">configuration.cpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="screensaver.cpp">screensaver.cpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="application.h">application.h</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="configuration.h">configuration.h</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="framework.h">framework.h</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="registry.h">registry.h</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="resource.h">resource.h</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="screensaver.h">screensaver.h</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="targetver.h">targetver.h</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$projectname$.rc">ScreenSaverApp.rc</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$projectname$.ico">ScreenSaverApp.ico</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

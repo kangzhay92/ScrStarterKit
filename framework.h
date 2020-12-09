@@ -11,6 +11,7 @@
 
 // Windows Header Files
 #include <Windows.h>
+#include <CommCtrl.h>
 
 // STL C++ Runtime Header Files
 #include <string>
